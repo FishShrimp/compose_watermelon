@@ -1,0 +1,20 @@
+<div id="body">
+    <h1>PSD转Cocos预设体</h1>
+    <hr />
+    <ui-prop name="PSD路径" class="flex-1 layout horizontal center">
+        <ui-input class="flex-2" v-value="psdPath" readonly tabindex="-1"></ui-input>
+        <ui-button class="tiny" tabindex="-1" @click="selectPsdFile">...</ui-button>
+    </ui-prop>
+
+    <ui-prop name="生成路径" class="flex-1 layout horizontal center">
+        <ui-input class="flex-2" v-value="prefabPath" tabindex="-1"></ui-input>
+        <ui-button class="tiny" tabindex="-1" @click="selectPrefabFolder">...</ui-button>
+        <ui-button class="tiny" tabindex="-1" @click="selectDefaultPrefabFolder">默认</ui-button>
+    </ui-prop>
+
+    <ui-prop class="right">
+        <ui-button class="green" @click="build">构  建</ui-button>
+        <ui-button class="green" @click="refresh">刷  新</ui-button>
+    </ui-prop>
+    
+</div>

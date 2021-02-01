@@ -1,0 +1,19 @@
+{
+  "name": "psd2cocos",
+  "version": "0.0.1",
+  "description": "The package template for getting started.",
+  "author": "Cocos Creator",
+  "main": "main.js",
+  "main-menu": {
+    "i18n:MAIN_MENU.package.title/i18n:psd2cocos.title": {
+      "message": "psd2cocos:open"
+    }
+  },
+  "panel": {
+    "main": "panel/index.js",
+    "type": "dockable",
+    "title": "psd2cocos",
+    "width": 400,
+    "height": 200
+  }
+}
