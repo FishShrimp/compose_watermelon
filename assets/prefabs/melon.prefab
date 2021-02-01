@@ -165,8 +165,8 @@
     "tag": 0,
     "_density": 2,
     "_sensor": false,
-    "_friction": 0.6,
-    "_restitution": 0.1,
+    "_friction": 0.2,
+    "_restitution": 0.05,
     "body": null,
     "_offset": {
       "__type__": "cc.Vec2",

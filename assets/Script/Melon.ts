@@ -93,7 +93,7 @@ export default class Melon extends cc.Component {
             this.canTrigger = false
             this.setRigidBody(0);
             other.setRigidBody(0);
-            cc.tween(selfCollider.node).to(0.2, { position: otherCollider.node.position }).call(() => {
+            cc.tween(selfCollider.node).to(0.1, { position: otherCollider.node.position }).call(() => {
                 U.eventBus.emit("score", { delta: score })
                 U.eventBus.emit("generate_bigger_melon", { type: this.num + 1, pos: selfCollider.node.position })
                 otherCollider.node.active = false;

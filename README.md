@@ -1,2 +1,2 @@
-# 合成大西瓜
-
+# hello-world
+Hello world new project template.

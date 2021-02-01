@@ -113,14 +113,18 @@ export default class MelonLayer extends cc.Component {
         this.node.addChild(b);
         b.active = true;
         let ball = b.getComponent(Melon);
-        ball.setRigidBodyStatus(true);
-        ball.setGravityScale(1);
-        ball.setRigidBody(1);
+        ball.setRigidBodyStatus(false);
+        ball.setGravityScale(0);
+        ball.setRigidBody(0);
         ball.setStarted(true);
         ball.init(type)
         b.setPosition(pos);
         b.setScale(0);
-        cc.tween(b).to(0.2, { scale: 1 }).start()
+        cc.tween(b).to(0.1, { scale: 1 }).call(() => {
+            ball.setRigidBodyStatus(true);
+            ball.setGravityScale(1);
+            ball.setRigidBody(1);
+        }).start()
     }
 
 
